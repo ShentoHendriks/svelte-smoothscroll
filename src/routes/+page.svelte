@@ -1,15 +1,8 @@
-<div data-scroll data-scroll-section class="wrapper"
->
-  <h1 data-scroll data-scroll-speed="0.2">
-    Welcome to your library project
-  </h1>
-  <p>
-    Create your package using @sveltejs/package and preview/showcase your work
-    with SvelteKit
-  </p>
-  <p>
-    Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-  </p>
+<div data-scroll data-scroll-section class="wrapper">
+<p data-scroll data-scroll-speed="0.10">This move slow</p>
+  <h1 data-scroll data-scroll-speed="0.2">This moves at medium</h1>
+  <p data-scroll data-scroll-speed="0.25">This move a little bit faster</p>
+  <div data-scroll>This moves at normal speed</div>
 </div>
 
 <style>
