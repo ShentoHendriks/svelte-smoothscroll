@@ -1,0 +1,1 @@
+export { default as ScrollWrapper } from './src/ScrollWrapper.svelte';
