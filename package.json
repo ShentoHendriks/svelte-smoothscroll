@@ -1,6 +1,6 @@
 {
-	"name": "@shento/svelte-smoothscroll",
-	"version": "0.0.1",
+	"name": "@shentohendriks/svelte-smoothscroll",
+	"version": "0.0.2",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -40,5 +40,22 @@
 	"type": "module",
 	"dependencies": {
 		"locomotive-scroll": "^5.0.0-beta.14"
-	}
+	},
+	"description": "Package that utilizes locomotive-scroll 5 with Svelte 5 and Svelte Kit",
+	"main": "svelte.config.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ShentoHendriks/svelte-smoothscroll.git"
+	},
+	"keywords": [
+		"svelte5",
+		"sveltekit",
+		"locomotive-scroll"
+	],
+	"author": "Shento Hendriks",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ShentoHendriks/svelte-smoothscroll/issues"
+	},
+	"homepage": "https://github.com/ShentoHendriks/svelte-smoothscroll#readme"
 }

@@ -5,6 +5,6 @@
   } = $props();
 </script>
 
-<ScrollWrapper settings={null}>
+<ScrollWrapper settings={{smoothWheel: true}}>
   {@render children()}
 </ScrollWrapper>

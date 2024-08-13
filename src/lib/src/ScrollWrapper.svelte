@@ -10,7 +10,7 @@
 
 	$effect(async () => {
 		if (browser) {
-			scrollInstance = await initLocomotiveScroll({settings});
+			scrollInstance = await initLocomotiveScroll(settings);
 			return () => {
 				scrollInstance?.destroy();
 			};
