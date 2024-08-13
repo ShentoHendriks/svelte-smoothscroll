@@ -9,7 +9,7 @@ This Svelte smoothscrolling library is only compatible with Svelte 5. It uses th
 2. Go to your `+layout.svelte` file and import Library and wrapping it around your content you want smooth scrolling and parallex on:
 ```svelte
 <script>
-  import ScrollWrapper from "$lib/src/ScrollWrapper.svelte";
+	import { ScrollWrapper } from '@shentohendriks/svelte-smoothscroll';
   const {
     children
   } = $props();
