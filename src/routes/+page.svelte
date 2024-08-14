@@ -3,6 +3,7 @@
   <h1 data-scroll data-scroll-speed="0.2">This moves at medium</h1>
   <p data-scroll data-scroll-speed="0.25">This move a little bit faster</p>
   <div data-scroll>This moves at normal speed</div>
+  <a href="/test">Back sex</a>
 </div>
 
 <style>
