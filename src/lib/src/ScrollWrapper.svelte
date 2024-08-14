@@ -9,22 +9,20 @@
 
 	const { children, settings } = $props();
 
-	$effect(async () => {
-		if (browser) {
+	async function initializeScroll() {
+			if (scrollInstance) {
+					scrollInstance.destroy();
+			}
+			console.log('Initializing new scroll instance');
 			scrollInstance = await initLocomotiveScroll(settings);
-			return () => {
-				scrollInstance?.destroy();
-			};
-		}
-	});
+	}
 
-	afterNavigate(() => {
-    if (browser && scrollInstance && $page) {
-      console.log('Navigated, updating scroll');
-      scrollInstance.update();
-      scrollInstance.scrollTo(0, { duration: 0, disableLerp: true });
-    }
-  });
+	afterNavigate(async () => {
+			if (browser) {
+					await initializeScroll();
+					scrollInstance.scrollTo(0, { duration: 100, disableLerp: true });
+			}
+	});
 </script>
 
 <div data-scroll-container>
