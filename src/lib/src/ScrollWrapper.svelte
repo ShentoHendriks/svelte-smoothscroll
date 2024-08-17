@@ -17,10 +17,11 @@
 			scrollInstance = await initLocomotiveScroll(settings);
 	}
 
+	// When user goes back 
 	afterNavigate(async () => {
 			if (browser) {
 					await initializeScroll();
-					scrollInstance.scrollTo(0, { duration: 1, disableLerp: true });
+					scrollInstance.scrollTo(0, { duration: 0, disableLerp: true });
 			}
 	});
 </script>
