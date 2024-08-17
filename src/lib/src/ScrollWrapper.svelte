@@ -20,7 +20,7 @@
 	afterNavigate(async () => {
 			if (browser) {
 					await initializeScroll();
-					scrollInstance.scrollTo(0, { duration: 100, disableLerp: true });
+					scrollInstance.scrollTo(0, { duration: 1, disableLerp: true });
 			}
 	});
 </script>
